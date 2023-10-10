@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
+import MargaritasRowList from "./MargaritasRowList";
+
 const MargaritasList = () => {
   const [margartias, setMargaritas] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     const fetchMargaritas = async () => {
@@ -20,18 +23,39 @@ const MargaritasList = () => {
     fetchMargaritas();
   }, []);
 
-  const renderedMargartias = margartias.map((margartia) => (
-    <tr key={`${margartia.idDrink}${margartia.strTags}`}>
-      <td>{margartia.strDrink}</td>
-      <td>{margartia.strCategory}</td>
-      <td>{margartia.strAlcoholic}</td>
-      <td style={{ fontSize: "50%" }}>{margartia.strInstructions}</td>
-    </tr>
+  const filteredMargaritas = margartias.filter((margarita) => {
+    const LowerCaseStrDrink = margarita.strDrink.toLowerCase();
+    return LowerCaseStrDrink.includes(searchValue.toLowerCase());
+  });
+
+  const renderedMargartias = filteredMargaritas.map((margartia) => (
+    <MargaritasRowList
+      margartia={margartia}
+      key={`${margartia.idDrink}${margartia.strTags}`}
+    />
   ));
+
+  const handleSearchChange = (event) => {
+    setSearchValue(event.target.value);
+  };
 
   return (
     <>
       <h1>List of Margaritas</h1>
+
+      <form>
+        <input
+          type="text"
+          placeholder="search margaritas..."
+          onChange={handleSearchChange}
+        />
+        <select>
+          <options></options>
+          <options></options>
+          <options></options>
+        </select>
+      </form>
+
       <table>
         <thread>
           <tr>
@@ -41,7 +65,16 @@ const MargaritasList = () => {
             <th>Instructions</th>
           </tr>
         </thread>
-        <body>{renderedMargartias}</body>
+        <tbody>
+          {filteredMargaritas.map((margartia) => (
+            <tr key={`${margartia.idDrink}${margartia.strTags}`}>
+              <td>{margartia.strDrink}</td>
+              <td>{margartia.strCategory}</td>
+              <td>{margartia.strAlcoholic}</td>
+              <td style={{ fontSize: "50%" }}>{margartia.strInstructions}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </>
   );
