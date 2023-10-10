@@ -6,10 +6,10 @@ const header = () => {
         <nav>
           <ul>
             <li>
-              <a href="some-id1">some link title 1</a>
+              <a href="some-id1">Random Cocktail</a>
             </li>
             <li>
-              <a href="some-id2">some link title 2</a>
+              <a href="some-id2">List of margaritas</a>
             </li>
             <li>
               <a href="some-id3">some link title 3</a>
