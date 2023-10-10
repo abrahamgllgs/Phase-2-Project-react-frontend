@@ -2,16 +2,18 @@ const header = () => {
   return (
     <>
       <header>
-        <h1 className="AppName">Cocktail App</h1>
+        <h1 a href="Cocktail App" className="AppName">
+          Cocktail App
+        </h1>
         <nav>
           <ul>
             <li>
-              <a href="some-id1" className="site-title">
+              <a href="Random Cocktail" className="site-title">
                 Random Cocktail
               </a>
             </li>
             <li>
-              <a href="some-id2" className="site-list">
+              <a href="List of Margaritas" className="site-list">
                 List of margaritas
               </a>
             </li>
