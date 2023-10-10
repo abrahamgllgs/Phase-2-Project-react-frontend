@@ -1,0 +1,73 @@
+.site-title {
+  color: rgb(255, 141, 179);
+}
+.site-list {
+  color: rgb(255, 145, 182);
+}
+.DrinkName {
+  color: rgba(255, 169, 132, 0.904);
+}
+.Instructions {
+  color: rgb(255, 255, 255);
+}
+.Ingredient {
+  color: rgb(254, 210, 130);
+}
+.AppName {
+  color: rgb(152, 57, 240);
+  background-color: rgb(255, 43, 85);
+  text-decoration: underline;
+  text-align: center;
+}
+.SecondTitle {
+  color: rgb(255, 188, 235);
+  text-align: center;
+}
+.RandomizerTitle {
+  color: rgb(254, 210, 130);
+  text-decoration: underline;
+  text-align: center;
+}
+.ListOfM {
+  color: rgb(255, 143, 181);
+  text-decoration: underline;
+  text-align: center;
+}
+.TH-Name {
+  color: rgba(255, 169, 132, 0.904);
+}
+.TH-Cata {
+  color: rgba(255, 169, 132, 0.904);
+}
+.TH-ALC {
+  color: rgba(255, 169, 132, 0.904);
+}
+.TH-IN {
+  color: rgba(255, 169, 132, 0.904);
+}
+.NameDrink {
+  color: rgb(88, 79, 255);
+  font-size: small;
+}
+.CataDrink {
+  color: rgb(255, 147, 183);
+  font-size: small;
+}
+.ALCDrink {
+  color: rgb(255, 147, 183);
+  font-size: small;
+}
+.INSDrink {
+  color: rgb(255, 255, 255);
+  font-size: small;
+  text-align: center;
+}
+.tableThread {
+  table-layout: auto;
+  font-size: 0%;
+}
+:root {
+  background-image: -webkit-image-set(
+    "https://m.media-amazon.com/images/I/71iP+RcgV0L._AC_UF894,1000_QL80_.jpg"
+  );
+}
