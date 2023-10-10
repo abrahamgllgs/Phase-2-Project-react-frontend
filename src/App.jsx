@@ -5,6 +5,7 @@ import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import MargaritasList from "./Components/MargaritasList";
 import RandomCocktailButton from "./Components/RandomCocktail";
+import "../src/styles.css";
 
 const App = () => {
   const [count, setCount] = useState(0);
