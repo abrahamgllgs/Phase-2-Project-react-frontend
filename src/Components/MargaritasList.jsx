@@ -41,7 +41,7 @@ const MargaritasList = () => {
 
   return (
     <>
-      <h1>List of Margaritas</h1>
+      <h1 className="ListOfM">List of Margaritas</h1>
 
       <form>
         <input
@@ -57,21 +57,27 @@ const MargaritasList = () => {
       </form>
 
       <table>
-        <thread>
+        <thread className="tableThread">
           <tr>
-            <th>Name</th>
-            <th>Catagory</th>
-            <th>Alcoholic</th>
-            <th>Instructions</th>
+            <th className="TH-Name"> Name</th>
+
+            <th className="TH-Cata"> Catagory</th>
+
+            <th className="TH-ALC"> Alcoholic</th>
+
+            <th className="TH-IN"> Instructions</th>
           </tr>
         </thread>
         <tbody>
           {filteredMargaritas.map((margartia) => (
             <tr key={`${margartia.idDrink}${margartia.strTags}`}>
-              <td>{margartia.strDrink}</td>
-              <td>{margartia.strCategory}</td>
-              <td>{margartia.strAlcoholic}</td>
-              <td style={{ fontSize: "50%" }}>{margartia.strInstructions}</td>
+              <td className="NameDrink">{margartia.strDrink}</td>
+
+              <td className="CataDrink">{margartia.strCategory}</td>
+
+              <td className="ALCDrink">{margartia.strAlcoholic}</td>
+
+              <td className="INSDrink">{margartia.strInstructions}</td>
             </tr>
           ))}
         </tbody>
