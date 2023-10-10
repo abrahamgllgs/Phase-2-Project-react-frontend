@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import react from "@vitejs/plugin-react-swc";
 
-useEffect(() => {
-  const fetchMargaritas = async () => {
-    const url = "http://localhost:3004/Margritas";
-    try {
-      const response = await fetch(url);
-      const jsonData = await response.json();
-      console.log(jsonData);
-      setMargaritas(jsonData);
-    } catch (error) {
-      console.error("Error occured when fetching data", error);
-      return null;
-    }
-  };
+function RandomCocktailButton() {
+  const [cocktail, setCocktail] = useState(null);
+}
 
-  fetchMargaritas();
-}, []);
+const getRandomCocktail = () => {};
