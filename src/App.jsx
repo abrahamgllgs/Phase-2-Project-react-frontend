@@ -3,8 +3,9 @@ import { useState } from "react";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+import MargaritasList from "./Components/MargaritasList";
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -14,6 +15,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

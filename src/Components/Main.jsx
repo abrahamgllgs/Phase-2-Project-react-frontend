@@ -1,9 +1,11 @@
+import MargaritasList from "./MargaritasList";
+
 const Main = () => {
   return (
     <>
       <main>
-        <h2>The Main Section</h2>
-        <p>Some Text</p>
+        <h2>Main section </h2>
+        <MargaritasList />
       </main>
     </>
   );
