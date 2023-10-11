@@ -49,38 +49,23 @@ const MargaritasList = () => {
           placeholder="search margaritas..."
           onChange={handleSearchChange}
         />
-        <select>
-          <options></options>
-          <options></options>
-          <options></options>
-        </select>
       </form>
 
       <table>
         <thread className="tableThread">
-          <tr>
-            <th className="TH-Name"> Name</th>
-
-            <th className="TH-Cata"> Catagory</th>
-
-            <th className="TH-ALC"> Alcoholic</th>
-
-            <th className="TH-IN"> Instructions</th>
-          </tr>
-        </thread>
-        <tbody>
           {filteredMargaritas.map((margartia) => (
-            <tr key={`${margartia.idDrink}${margartia.strTags}`}>
-              <td className="NameDrink">{margartia.strDrink}</td>
-
-              <td className="CataDrink">{margartia.strCategory}</td>
-
-              <td className="ALCDrink">{margartia.strAlcoholic}</td>
-
-              <td className="INSDrink">{margartia.strInstructions}</td>
+            <tr key={`${margartia.idDrink} ${margartia.strTags}`}>
+              <th className="TH-Name">Name</th>
+              <td className="NameDrink">{margartia.strDrink} </td>
+              <th className="TH-Cata">Catagory</th>
+              <td className="CataDrink">{margartia.strCategory} </td>
+              <th className="TH-ALC">Alcoholic</th>
+              <td className="ALCDrink">{margartia.strAlcoholic} </td>
+              <th className="TH-IN">Instructions</th>
+              <td className="INSDrink">{margartia.strInstructions} </td>
             </tr>
           ))}
-        </tbody>
+        </thread>
       </table>
     </>
   );
