@@ -35,32 +35,37 @@
 }
 .TH-Name {
   color: rgba(255, 169, 132, 0.904);
+  font-size: large;
 }
 .TH-Cata {
   color: rgba(255, 169, 132, 0.904);
+  font-size: large;
 }
 .TH-ALC {
   color: rgba(255, 169, 132, 0.904);
+  font-size: large;
 }
 .TH-IN {
   color: rgba(255, 169, 132, 0.904);
+  font-size: large;
 }
 .NameDrink {
   color: rgb(88, 79, 255);
-  font-size: small;
+  font-size: large;
+  text-align: left;
 }
 .CataDrink {
-  color: rgb(255, 147, 183);
-  font-size: small;
+  color: rgb(88, 79, 255);
+  font-size: large;
 }
 .ALCDrink {
-  color: rgb(255, 147, 183);
-  font-size: small;
+  color: rgb(88, 79, 255);
+  font-size: large;
 }
 .INSDrink {
   color: rgb(255, 255, 255);
   font-size: small;
-  text-align: center;
+  text-align: right;
 }
 .tableThread {
   table-layout: auto;
@@ -68,6 +73,6 @@
 }
 :root {
   background-image: -webkit-image-set(
-    "https://m.media-amazon.com/images/I/71iP+RcgV0L._AC_UF894,1000_QL80_.jpg"
+    "https://www.makeneonsign.com/cdn/shop/products/Cocktailneonsign_626x.jpg?v=1621324280"
   );
 }
