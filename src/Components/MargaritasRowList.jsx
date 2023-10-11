@@ -1,10 +1,12 @@
 const MargaritasRowList = ({ margartia }) => {
   <tr>
-    <td>{margartia.strDrink}</td>
-    <td>{margartia.strCategory}</td>
-    <td>{margartia.strAlcoholic}</td>
-    <td style={{ fontSize: "50%" }}>{margartia.strInstructions}</td>
+    <td className="NameDrink">{margartia.strDrink}</td>
+
+    <td className="CataDrink">{margartia.strCategory}</td>
+
+    <td className="ALCDrink">{margartia.strAlcoholic}</td>
+
+    <td className="INSDrink">{margartia.strInstructions}</td>
   </tr>;
 };
-
 export default MargaritasRowList;
