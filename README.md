@@ -42,7 +42,7 @@ This application is something simple I made using the react + vite. In this app,
 This project is licensed under the MIT License.
 see the LICENSE.md file for details.
 
-## project links
+## Project links
 
 https://abrahams-project-json-server-temple.onrender.com
 
