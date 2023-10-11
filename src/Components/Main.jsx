@@ -5,8 +5,8 @@ const Main = () => {
   return (
     <>
       <main>
-        <h2 className="SecondTitle"> Find your drink </h2>
-        <h3 className="RandomizerTitle">Randomizer</h3>
+        <h2 className="SecondTitle"> Find a drink </h2>
+        <h3 className="RandomizerTitle">Random Cocktail</h3>
         <RandomCocktailButton />
         <MargaritasList />
       </main>
